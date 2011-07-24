@@ -199,3 +199,5 @@ if [[ -s $HOME/.rvm/scripts/rvm ]] ; then source $HOME/.rvm/scripts/rvm ; fi
 
 # colordiff
 # alias diff=colordiff
+
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
