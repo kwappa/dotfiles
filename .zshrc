@@ -201,3 +201,9 @@ if [[ -s $HOME/.rvm/scripts/rvm ]] ; then source $HOME/.rvm/scripts/rvm ; fi
 alias diff=colordiff
 
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+
+# export path for android sdk
+if [[ -s /Developer/android-sdk-mac_x86 ]]
+then
+    export PATH=$PATH:/Developer/android-sdk-mac_x86/tools
+fi
