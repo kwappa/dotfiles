@@ -208,3 +208,6 @@ if [[ -s /Developer/android-sdk-mac_x86 ]]
 then
     export PATH=$PATH:/Developer/android-sdk-mac_x86/tools
 fi
+
+# set pager for git
+export GIT_PAGER='/usr/local/bin/lv -c -Au8'
