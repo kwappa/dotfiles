@@ -5,6 +5,7 @@
 # LANG
 #
 export LANG=ja_JP.UTF8
+export LC_ALL=C
 case ${UID} in
 0)
     LANG=C
@@ -191,13 +192,12 @@ esac
 
 
 ## load user .zshrc configuration file
-#
 [ -f ${HOME}/.zshrc.mine ] && source ${HOME}/.zshrc.mine
 
 # for rvm
 if [[ -s $HOME/.rvm/scripts/rvm ]] ; then source $HOME/.rvm/scripts/rvm ; fi
 
 # colordiff
-# alias diff=colordiff
+alias diff=colordiff
 
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
