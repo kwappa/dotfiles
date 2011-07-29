@@ -162,3 +162,7 @@ hardstatus alwayslastline "[%02c] %`%-w%{=b bw}%n %t%{-}%+w"
 
 termcapinfo * 'hs:ts=\E]2;:fs=\007:ds=\E]0;screen\007'
 
+defutf8 on
+defkanji utf-8
+encoding utf-8 utf-8
+defencoding utf-8
