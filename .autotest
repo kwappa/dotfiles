@@ -1,0 +1,25 @@
+# -*- ruby -*-
+module Autotest::Growl
+  def self.growl title, msg, img="~/.autotest.d/rails_ok.png", pri=0, sticky=""
+    msg += " at #{Time.now.strftime('%Y-%m-%d %H:%M:%S')}"
+    system "growlnotify -n autotest --image #{img} -p #{pri} -m #{msg.inspect} #{title} #{sticky}"
+  end
+
+  Autotest.add_hook :ran_command do |at|
+    results = [at.results].flatten.join("\n")
+    output = results.slice(/\d+\s+examples?,\s*(\d+)\s+failures?(,\s*(\d+)\s+pendings?)?/)
+    if output
+      if $~[1].to_i > 0
+        growl "Tests Failed", "#{output}", "~/.autotest.d/rails_fail.png", 2
+      else
+        if $~[3].to_i > 0
+          growl "Pending", "#{output}", "~/.autotest.d/rails_pending.png", 2
+        else
+          growl "Tests Passed", "#{output}", "~/.autotest.d/rails_ok.png", -2
+        end
+      end
+    else
+      growl "Tests Errored #{output}", "errors", "~/.autotest.d/rails_fail.png", 2
+    end
+  end
+end
