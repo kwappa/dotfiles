@@ -1,4 +1,6 @@
-# -*- ruby -*-
+# -*- mode: ruby; coding: utf-8 -*-
+Encoding.default_external = Encoding.find("UTF-8")
+
 module Autotest::Growl
   def self.growl title, msg, img="~/.autotest.d/rails_ok.png", pri=0, sticky=""
     msg += " at #{Time.now.strftime('%Y-%m-%d %H:%M:%S')}"
