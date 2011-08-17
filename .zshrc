@@ -207,6 +207,7 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 if [[ -s /Developer/android-sdk-mac_x86 ]]
 then
     export PATH=$PATH:/Developer/android-sdk-mac_x86/tools
+    export PATH=$PATH:/Developer/android-sdk-mac_x86/platform-tools
 fi
 
 # set pager for git
