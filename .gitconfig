@@ -12,3 +12,4 @@
 	co = checkout
 [core]
 	excludesfile = ~/.gitignore
+	editor = vim

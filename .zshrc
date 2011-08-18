@@ -4,7 +4,7 @@
 #
 # LANG
 #
-export LANG=ja_JP.UTF8
+export LANG=ja_JP.UTF-8
 export LC_ALL=C
 case ${UID} in
 0)
@@ -212,3 +212,7 @@ fi
 
 # set pager for git
 export GIT_PAGER='/usr/local/bin/lv -c -Au8'
+
+set convert-meta off
+set meta-flag on
+set output-meta on
