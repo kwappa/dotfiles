@@ -1,5 +1,5 @@
 #!/bin/sh
-files=(.zshrc .screenrc .gitconfig .gitignore .rspec .autotest .vimrc)
+files=(.zshrc .screenrc .gitconfig .gitignore .rspec .autotest .vimrc .tmux.conf)
 num=${#files[@]}
 i=0
 while (($i<$num))
