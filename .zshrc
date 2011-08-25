@@ -28,7 +28,7 @@ case ${UID} in
 *)
 #    PROMPT="%{${fg[green]}%}%/%%%{${reset_color}%} "
     PROMPT="%{${fg[green]}%}$USER@$HOST %%%{${reset_color}%} "
-    RPROMPT=$'%{\e[33m%}[%~]%{\e[m%}'
+#    RPROMPT=$'%{\e[33m%}[%~]%{\e[m%}'
     PROMPT2="%{${fg[green]}%}%_%%%{${reset_color}%} "
     SPROMPT="%{${fg[green]}%}%r is correct? [n,y,a,e]:%{${reset_color}%} "
     [ -n "${REMOTEHOST}${SSH_CONNECTION}" ] && 
