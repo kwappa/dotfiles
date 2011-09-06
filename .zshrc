@@ -194,6 +194,9 @@ esac
 ## load user .zshrc configuration file
 [ -f ${HOME}/.zshrc.mine ] && source ${HOME}/.zshrc.mine
 
+# export path for homebrew
+export PATH=/usr/local/bin:$PATH
+
 # for rvm
 if [[ -s $HOME/.rvm/scripts/rvm ]] ; then source $HOME/.rvm/scripts/rvm ; fi
 
