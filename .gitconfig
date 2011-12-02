@@ -13,3 +13,4 @@
 [core]
 	excludesfile = ~/.gitignore
 	editor = vim
+	quotepath = false
