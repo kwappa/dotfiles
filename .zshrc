@@ -5,7 +5,6 @@
 # LANG
 #
 export LANG=ja_JP.UTF-8
-export LC_ALL=C
 case ${UID} in
 0)
     LANG=C
@@ -213,9 +212,8 @@ then
     export PATH=$PATH:/Developer/android-sdk-mac_x86/platform-tools
 fi
 
+# less with multibite chars
+export LESSCHARSET=utf-8
+
 # set pager for git
 export GIT_PAGER='/usr/local/bin/lv -c -Au8'
-
-set convert-meta off
-set meta-flag on
-set output-meta on
