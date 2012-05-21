@@ -217,3 +217,5 @@ export LESSCHARSET=utf-8
 
 # set pager for git
 export GIT_PAGER='/usr/local/bin/lv -c -Au8'
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

@@ -10,7 +10,8 @@
 [alias]
 	st = status
 	co = checkout
+	br = branch
 [core]
 	excludesfile = ~/.gitignore
-	editor = vim
+	editor = vim -c \"set fenc=utf-8\"
 	quotepath = false
