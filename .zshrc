@@ -36,10 +36,9 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$HOME/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
-
 alias ll="ls -la"
 
+export PATH=$HOME/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # for rvm
@@ -47,11 +46,5 @@ if [[ -s $HOME/.rvm/scripts/rvm ]] ; then source $HOME/.rvm/scripts/rvm ; fi
 rvm gemset use global >/dev/null
 alias bundle='nocorrect bundle'
 
-
 # less with multibite chars
 export LESSCHARSET=utf-8
-
-# set pager for git
-export GIT_PAGER='/usr/local/bin/lv -c -Au8'
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
