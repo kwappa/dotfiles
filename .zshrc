@@ -48,3 +48,6 @@ alias bundle='nocorrect bundle'
 
 # less with multibite chars
 export LESSCHARSET=utf-8
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
