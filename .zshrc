@@ -45,6 +45,7 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 if [[ -s $HOME/.rvm/scripts/rvm ]] ; then source $HOME/.rvm/scripts/rvm ; fi
 rvm gemset use global >/dev/null
 alias bundle='nocorrect bundle'
+alias bx='nocorrect bundle exec'
 
 # less with multibite chars
 export LESSCHARSET=utf-8
