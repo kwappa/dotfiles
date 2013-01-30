@@ -52,3 +52,6 @@ export LESSCHARSET=utf-8
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+# use 256 colors emacs in terminal
+export TERM="xterm-256color"
