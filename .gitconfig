@@ -13,5 +13,5 @@
 	br = branch
 [core]
 	excludesfile = ~/.gitignore
-	editor = vim -c \"set fenc=utf-8\"
+	editor = emacs
 	quotepath = false
