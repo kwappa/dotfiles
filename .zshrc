@@ -34,24 +34,30 @@ ZSH_THEME="imajes"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
+export PATH=$HOME/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin
 
 # Customize to your needs...
 alias ll="ls -la"
 
-export PATH=$HOME/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
-# for rvm
-if [[ -s $HOME/.rvm/scripts/rvm ]] ; then source $HOME/.rvm/scripts/rvm ; fi
-rvm gemset use global >/dev/null
-alias bundle='nocorrect bundle'
-alias bx='nocorrect bundle exec'
-
 # less with multibite chars
 export LESSCHARSET=utf-8
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
 # use 256 colors emacs in terminal
 export TERM="xterm-256color"
+
+# for rvm
+if [[ -s $HOME/.rvm/scripts/rvm ]] ; then
+    source $HOME/.rvm/scripts/rvm
+    PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+fi
+
+# for rbenv
+if [[ -s $HOME/.rbenv ]] ; then
+    export PATH="$HOME/.rbenv/bin:$PATH"
+    eval "$(rbenv init - zsh)"
+fi
+
+# for Heroku Toolbelt
+if [[ -s "/usr/local/heroku/bin" ]] ; then
+    export PATH="/usr/local/heroku/bin:$PATH"
+fi
