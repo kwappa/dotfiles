@@ -1,3 +1,4 @@
---ignore-dir=vendor
---ignore-dir=assets
+--type-add=ruby=.haml
+--type-add=css=.scss
+
 
