@@ -38,6 +38,7 @@ export PATH=$HOME/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin
 
 # Customize to your needs...
 alias ll="ls -la"
+alias berspec="bundle exec rspec"
 
 # less with multibite chars
 export LESSCHARSET=utf-8
