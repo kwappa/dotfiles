@@ -46,12 +46,6 @@ export LESSCHARSET=utf-8
 # use 256 colors emacs in terminal
 export TERM="xterm-256color"
 
-# for rvm
-if [[ -s $HOME/.rvm/scripts/rvm ]] ; then
-    source $HOME/.rvm/scripts/rvm
-    PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-fi
-
 # for rbenv
 if [[ -s $HOME/.rbenv ]] ; then
     export PATH="$HOME/.rbenv/bin:$PATH"
