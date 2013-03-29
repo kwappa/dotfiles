@@ -16,3 +16,5 @@
 	excludesfile = ~/.gitignore
 	editor = emacs
 	quotepath = false
+[include]
+	path = .gitconfig.local
