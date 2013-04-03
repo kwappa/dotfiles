@@ -14,7 +14,6 @@
 	fetch-pulls = "fetch origin +refs/pull/*:refs/remotes/pull/*"
 [core]
 	excludesfile = ~/.gitignore
-	editor = emacs
 	quotepath = false
 [include]
 	path = .gitconfig.local
