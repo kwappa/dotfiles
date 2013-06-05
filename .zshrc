@@ -39,6 +39,7 @@ export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sb
 # Customize to your needs...
 alias ll="ls -la"
 alias berspec="bundle exec rspec"
+alias sprspec="bundle exec spring rspec"
 
 # less with multibite chars
 export LESSCHARSET=utf-8
