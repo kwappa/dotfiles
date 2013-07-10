@@ -47,6 +47,9 @@ export LESSCHARSET=utf-8
 # use 256 colors emacs in terminal
 export TERM="xterm-256color"
 
+# disable logout by Ctrl-D
+setopt IGNOREEOF
+
 # for rbenv
 if [[ -s $HOME/.rbenv ]] ; then
     export PATH="$HOME/.rbenv/bin:$PATH"
