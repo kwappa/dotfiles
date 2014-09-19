@@ -34,7 +34,7 @@ ZSH_THEME="imajes"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
-export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin
+export PATH=$HOME/bin:$HOME/tool:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin
 
 # Customize to your needs...
 alias ll="ls -la"
