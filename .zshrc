@@ -75,3 +75,6 @@ if [[ -s "/usr/local/opt/go/libexec/bin" ]] ; then
     export GOPATH=$HOME
 fi
 p() { peco | while read LINE; do $@ $LINE; done }
+
+# for gem-open
+export GEM_EDITOR="emacs"
