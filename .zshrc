@@ -69,8 +69,9 @@ fi
 # for local environment
 [ -f ~/.zshrc.include ] && source ~/.zshrc.include
 
-# for golang
+# for golang / peco
 if [[ -s "/usr/local/opt/go/libexec/bin" ]] ; then
     export PATH=$PATH:/usr/local/opt/go/libexec/bin
     export GOPATH=$HOME
 fi
+p() { peco | while read LINE; do $@ $LINE; done }
