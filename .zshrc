@@ -40,6 +40,8 @@ export PATH=$HOME/bin:$HOME/tool:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/u
 alias ll="ls -la"
 alias berspec="bundle exec rspec"
 alias sprspec="bundle exec spring rspec"
+alias bx="bundle exec"
+alias bi="bundle install"
 
 # less with multibite chars
 export LESSCHARSET=utf-8
@@ -75,7 +77,7 @@ if [[ -s "/usr/local/opt/go/libexec/bin" ]] ; then
     export GOPATH=$HOME
 fi
 p() { peco | while read LINE; do $@ $LINE; done }
-alias ghqcd='ghq list -p | p cd'
+alias q='ghq list -p | p cd'
 
 # for gem-open
 export GEM_EDITOR="emacs"
