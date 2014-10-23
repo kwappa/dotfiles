@@ -11,6 +11,7 @@
 	st = status
 	co = checkout
 	br = branch
+	ci = "commit -v"
 	fetch-pulls = "fetch origin +refs/pull/*:refs/remotes/pull/*"
 [core]
 	excludesfile = ~/.gitignore
