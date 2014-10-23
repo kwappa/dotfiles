@@ -79,3 +79,8 @@ alias ghqcd='ghq list -p | p cd'
 
 # for gem-open
 export GEM_EDITOR="emacs"
+
+# include local settings
+if [[ -s $HOME/.zshrc.local ]] ; then
+    source $HOME/.zshrc.local
+fi
