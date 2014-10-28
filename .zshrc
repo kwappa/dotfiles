@@ -70,6 +70,7 @@ fi
 
 # for local environment
 [ -f ~/.zshrc.include ] && source ~/.zshrc.include
+[ -f ~/.zshrc.local   ] && source ~/.zshrc.local
 
 # for golang / peco
 if [[ -s "/usr/local/opt/go/libexec/bin" ]] ; then
@@ -81,8 +82,3 @@ alias q='ghq list -p | p cd'
 
 # for gem-open
 export GEM_EDITOR="emacs"
-
-# include local settings
-if [[ -s $HOME/.zshrc.local ]] ; then
-    source $HOME/.zshrc.local
-fi
