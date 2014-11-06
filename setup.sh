@@ -10,7 +10,7 @@ if [ $# -ne 1 ]; then
 fi
 
 mode=$1
-files=(.zshrc .screenrc .gitconfig .gitignore .rspec .autotest .vimrc .tmux.conf .inputrc .ackrc .pryrc)
+files=(.zshrc .screenrc .gitconfig .gitignore .rspec .autotest .vimrc .tmux.conf .inputrc .pryrc)
 num=${#files[@]}
 i=0
 
