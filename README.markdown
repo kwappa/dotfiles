@@ -17,3 +17,15 @@ my dotfiles.
 ```
 
 * remove symlinks from your home directory
+
+## dotfiles
+
+* .zshrc
+* .gitconfig
+* .gitignore
+* .rspec
+* .autotest
+* .vimrc
+* .tmux.conf
+* .inputrc
+* .pryrc
