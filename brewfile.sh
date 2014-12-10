@@ -6,8 +6,6 @@ brew install bazaar
 brew install cmake
 brew install emacs --cocoa
 brew linkapps
-brew install fontconfig
-brew install freetype
 brew install gdbm
 brew install gettext
 brew install gibo
