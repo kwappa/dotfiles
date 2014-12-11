@@ -29,3 +29,9 @@ my dotfiles.
 * .tmux.conf
 * .inputrc
 * .pryrc
+
+## brewfile.sh
+
+install something via Homebrew.
+
+execute './brewfilesh' after installation of Homebrew.
