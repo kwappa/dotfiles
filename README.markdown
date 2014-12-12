@@ -34,4 +34,4 @@ my dotfiles.
 
 install something via Homebrew.
 
-execute './brewfilesh' after installation of Homebrew.
+execute `./brewfile.sh` after installation of Homebrew.
