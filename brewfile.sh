@@ -33,3 +33,4 @@ brew install tmux
 brew install wget
 brew install xz
 brew install zsh
+brew install caskroom/cask/brew-cask
