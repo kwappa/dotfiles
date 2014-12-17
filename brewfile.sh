@@ -1,5 +1,5 @@
 #!/bin/sh
-
+brew update
 brew install autoconf
 brew install automake
 brew install bazaar
@@ -33,4 +33,14 @@ brew install tmux
 brew install wget
 brew install xz
 brew install zsh
+
 brew install caskroom/cask/brew-cask
+brew cask install xquartz
+
+brew tap sanemat/font
+brew install ricty
+cp -f /usr/local/Cellar/ricty/3.2.3/share/fonts/Ricty*.ttf ~/Library/Fonts/
+fc-cache -vf
+
+brew upgrade
+brew cleanup
