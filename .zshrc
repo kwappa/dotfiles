@@ -82,3 +82,6 @@ alias q='ghq list -p | p cd'
 
 # for gem-open
 export GEM_EDITOR="emacs"
+
+# for AWS CLI
+[ -f /usr/local/share/zsh/site-functions/_aws ] && source /usr/local/share/zsh/site-functions/_aws
