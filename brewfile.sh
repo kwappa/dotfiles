@@ -37,6 +37,7 @@ brew install zsh
 
 brew install caskroom/cask/brew-cask
 brew cask install xquartz
+brew cask install heroku-toolbelt
 
 brew tap sanemat/font
 brew install ricty
