@@ -25,6 +25,7 @@ brew install markdown
 brew install openssl
 brew install pcre
 brew install pkg-config
+brew install python
 brew install rbenv
 brew install readline
 brew install ruby-build
