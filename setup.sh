@@ -10,7 +10,7 @@ if [ $# -ne 1 ]; then
 fi
 
 mode=$1
-files=(.zshrc .gitconfig .gitignore .rspec .autotest .vimrc .tmux.conf .inputrc .pryrc)
+files=(.zshrc .gitconfig .gitignore .rspec .vimrc .tmux.conf .inputrc .pryrc)
 num=${#files[@]}
 i=0
 
@@ -44,21 +44,3 @@ do
   fi
   i=$i+1
 done
-
-if [ ! $mode = 'install' ]; then
-    exit
-fi
-
-if [[ ! -d $HOME/\.autotest\.d ]] ; then
-  mkdir $HOME/.autotest.d
-  autotest_imgs=(rails_fail.png rails_ok.png rails_pending.png)
-  num=${#autotest_imgs[@]}
-  i=0
-  echo $num
-  while (($i<$num))
-  do
-      echo ${autotest_imgs[$i]}
-      wget http://cocooooooon.com/kinotan/${autotest_imgs[$i]} -O $HOME/.autotest.d/${autotest_imgs[$i]}
-      i=$i+1
-  done
-fi

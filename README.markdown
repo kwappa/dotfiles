@@ -24,7 +24,6 @@ my dotfiles.
 * .gitconfig
 * .gitignore
 * .rspec
-* .autotest
 * .vimrc
 * .tmux.conf
 * .inputrc
