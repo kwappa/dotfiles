@@ -12,6 +12,8 @@
 	co = checkout
 	br = branch
 	ci = "commit -v"
+    d  = diff
+    dc = "diff --cached"
 	fetch-pulls = "fetch origin +refs/pull/*:refs/remotes/pull/*"
 [core]
 	excludesfile = ~/.gitignore
