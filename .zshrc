@@ -42,6 +42,7 @@ alias berspec="bundle exec rspec"
 alias sprspec="bundle exec spring rspec"
 alias bx="bundle exec"
 alias bi="bundle install"
+alias g="git"
 
 # less with multibite chars
 export LESSCHARSET=utf-8
