@@ -1,32 +1,32 @@
 [user]
-	name = SHIOYA, Hiromu
-	email = kwappa.856@gmail.com
+    name = SHIOYA, Hiromu
+    email = kwappa.856@gmail.com
 [color]
-	ui = auto
-	diff = auto
-	status = auto
-	branch = auto
-	interactive = auto
+    ui = auto
+    diff = auto
+    status = auto
+    branch = auto
+    interactive = auto
 [alias]
-	st = status
-	co = checkout
-	br = branch
-	ci = "commit -v"
+    st = status
+    co = checkout
+    br = branch
+    ci = "commit -v"
     ap = "add -p"
     d  = diff
     di = diff
     dc = "diff --cached"
-	fetch-pulls = "fetch origin +refs/pull/*:refs/remotes/pull/*"
+    fetch-pulls = "fetch origin +refs/pull/*:refs/remotes/pull/*"
 [core]
-	excludesfile = ~/.gitignore
-	quotepath = false
+    excludesfile = ~/.gitignore
+    quotepath = false
 [include]
-	path = .gitconfig.local
+    path = .gitconfig.local
 [pager]
     log  = diff-highlight | less
     show = diff-highlight | less
     diff = diff-highlight | less
 [ghq]
-	root = ~/src
+    root = ~/src
 [push]
     default = simple
