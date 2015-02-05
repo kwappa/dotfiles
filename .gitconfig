@@ -12,7 +12,9 @@
 	co = checkout
 	br = branch
 	ci = "commit -v"
+    ap = "add -p"
     d  = diff
+    di = diff
     dc = "diff --cached"
 	fetch-pulls = "fetch origin +refs/pull/*:refs/remotes/pull/*"
 [core]
