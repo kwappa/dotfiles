@@ -15,6 +15,9 @@
     ap = "add -p"
     d  = diff
     di = diff
+    l  = log
+    lp = "log -p"
+    lg = "log --graph --pretty=oneline"
     dc = "diff --cached"
     fetch-pulls = "fetch origin +refs/pull/*:refs/remotes/pull/*"
 [core]
