@@ -31,6 +31,7 @@ brew install readline
 brew install ruby-build
 brew install the_silver_searcher
 brew install tmux
+brew install reattach-to-user-namespace
 brew install wget
 brew install xz
 brew install zsh
