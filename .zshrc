@@ -55,3 +55,8 @@ export GEM_EDITOR="emacs"
 
 # for AWS CLI
 [ -f /usr/local/share/zsh/site-functions/_aws ] && source /usr/local/share/zsh/site-functions/_aws
+
+# for Android Studion platform-tools
+if [[ -s "$HOME/Library/Android/sdk/platform-tools" ]] ; then
+    export PATH=$PATH:"$HOME/Library/Android/sdk/platform-tools"
+fi
