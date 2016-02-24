@@ -10,7 +10,7 @@ alias ll="ls -la"
 alias berspec="bundle exec rspec"
 alias sprspec="bundle exec spring rspec"
 alias bx="bundle exec"
-alias bi="bundle install"
+alias bi="bundle install --path=vendor/bundle"
 alias g="git"
 
 # less with multibite chars
