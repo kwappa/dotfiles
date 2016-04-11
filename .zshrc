@@ -60,3 +60,6 @@ export GEM_EDITOR="emacs"
 if [[ -s "$HOME/Library/Android/sdk/platform-tools" ]] ; then
     export PATH=$PATH:"$HOME/Library/Android/sdk/platform-tools"
 fi
+
+# for homebrew on El Capitan
+alias writable-usr-local='sudo chown -R $(whoami):admin /usr/local'
