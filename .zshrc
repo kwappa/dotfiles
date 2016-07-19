@@ -6,10 +6,16 @@ export PATH=$HOME/bin:$HOME/tool:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/u
 autoload -U compinit
 compinit -u
 
+
+# colors
+autoload -Uz colors
+colors
+
 # prompt
 PROMPT='%F{blue}[%*] %F{red}%%%f '
 
 # Aliases
+alias ls="ls -G"
 alias ll="ls -la"
 alias berspec="bundle exec rspec"
 alias sprspec="bundle exec spring rspec"
