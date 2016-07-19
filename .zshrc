@@ -1,9 +1,13 @@
-ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="imajes"
 plugins=(git)
 
-source $ZSH/oh-my-zsh.sh
 export PATH=$HOME/bin:$HOME/tool:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin
+
+# enable auto-completion
+autoload -U compinit
+compinit -u
+
+# prompt
+PROMPT='%F{blue}[%*] %F{red}%%%f '
 
 # Aliases
 alias ll="ls -la"
