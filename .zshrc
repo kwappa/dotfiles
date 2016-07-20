@@ -6,7 +6,6 @@ export PATH=$HOME/bin:$HOME/tool:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/u
 autoload -U compinit
 compinit -u
 
-
 # colors
 autoload -Uz colors
 colors
@@ -22,6 +21,22 @@ alias sprspec="bundle exec spring rspec"
 alias bx="bundle exec"
 alias bi="bundle install --path=vendor/bundle"
 alias g="git"
+
+# HISTORY
+export HISTFILE=${HOME}/.zsh_history
+export HISTSIZE=1000
+export SAVEHIST=100000
+setopt hist_ignore_dups
+setopt EXTENDED_HISTORY
+setopt share_history
+setopt hist_ignore_all_dups
+setopt hist_ignore_space
+setopt hist_verify
+setopt hist_reduce_blanks
+setopt hist_save_no_dups
+setopt hist_no_store
+setopt hist_expand
+setopt inc_append_history
 
 # less with multibite chars
 export LESSCHARSET=utf-8
