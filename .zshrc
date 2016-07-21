@@ -21,6 +21,9 @@ alias sprspec="bundle exec spring rspec"
 alias bx="bundle exec"
 alias bi="bundle install --path=vendor/bundle"
 alias g="git"
+alias emacs='emacs -nw'
+alias e='emacsclient -nw -a ""'
+alias ek='emacsclient -e "(kill-emacs)"'
 
 # HISTORY
 export HISTFILE=${HOME}/.zsh_history
