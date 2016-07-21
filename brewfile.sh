@@ -16,7 +16,8 @@ brew install icu4c
 brew install imagemagick
 brew install jpeg
 brew install libevent
-brew install libiconv
+brew install homebrew/dupes/libiconv
+brew link libiconv --force
 brew install libpng
 brew install libtiff
 brew install libtool
@@ -35,10 +36,11 @@ brew install reattach-to-user-namespace
 brew install wget
 brew install xz
 brew install zsh
+brew install ghq
+brew install peco
+brew install heroku
 
-brew install caskroom/cask/brew-cask
 brew cask install xquartz
-brew cask install heroku-toolbelt
 
 brew tap sanemat/font
 brew install ricty
