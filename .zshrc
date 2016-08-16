@@ -25,6 +25,7 @@ alias bx="bundle exec"
 alias bi="bundle install --path=vendor/bundle"
 alias g="git"
 alias emacs='emacs -nw'
+alias py='python3'
 
 # HISTORY
 export HISTFILE=${HOME}/.zsh_history
