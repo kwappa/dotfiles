@@ -6,6 +6,9 @@ export PATH=$HOME/bin:$HOME/tool:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/u
 autoload -U compinit
 compinit -u
 
+# case-insensitive completion
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+
 # colors
 autoload -Uz colors
 colors
