@@ -4,8 +4,8 @@ brew install autoconf
 brew install automake
 brew install bazaar
 brew install cmake
-brew install emacs --cocoa
-brew linkapps
+brew install emacs --with-cocoa --with-gnutls
+brew linkapps emacs
 brew install gdbm
 brew install gettext
 brew install gibo
