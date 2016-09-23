@@ -3,9 +3,9 @@ plugins=(git)
 export PATH=$HOME/bin:$HOME/tool:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin
 
 # enable auto-completion
+fpath=(/usr/local/share/zsh-completions $fpath)
 autoload -U compinit
 compinit -u
-fpath=(/usr/local/share/zsh-completions $fpath)
 
 # case-insensitive completion
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
