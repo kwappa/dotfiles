@@ -5,6 +5,7 @@ export PATH=$HOME/bin:$HOME/tool:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/u
 # enable auto-completion
 autoload -U compinit
 compinit -u
+fpath=(/usr/local/share/zsh-completions $fpath)
 
 # case-insensitive completion
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'

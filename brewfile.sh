@@ -36,6 +36,7 @@ brew install reattach-to-user-namespace
 brew install wget
 brew install xz
 brew install zsh
+brew install zsh-completions
 brew install ghq
 brew install peco
 brew install heroku
