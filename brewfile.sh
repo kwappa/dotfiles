@@ -37,12 +37,13 @@ brew install wget
 brew install xz
 brew install zsh
 brew install zsh-completions
+
 brew install ghq
 brew install peco
 brew install heroku
+go get -u github.com/nsf/gocode
 
 brew cask install xquartz
-
 brew tap sanemat/font
 brew install ricty
 cp -f /usr/local/Cellar/ricty/3.2.3/share/fonts/Ricty*.ttf ~/Library/Fonts/
