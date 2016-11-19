@@ -2,13 +2,11 @@
 brew update
 brew install autoconf
 brew install automake
-brew install bazaar
 brew install cmake
 brew install emacs --with-cocoa --with-gnutls
 brew linkapps emacs
 brew install gdbm
 brew install gettext
-brew install gibo
 brew install git
 brew install go
 brew install hub
@@ -42,12 +40,6 @@ brew install ghq
 brew install peco
 brew install heroku
 go get -u github.com/nsf/gocode
-
-brew cask install xquartz
-brew tap sanemat/font
-brew install ricty
-cp -f /usr/local/Cellar/ricty/3.2.3/share/fonts/Ricty*.ttf ~/Library/Fonts/
-fc-cache -vf
 
 brew upgrade
 brew cleanup
