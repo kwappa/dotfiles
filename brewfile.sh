@@ -35,6 +35,7 @@ brew install wget
 brew install xz
 brew install zsh
 brew install zsh-completions
+brew install pwgen
 
 brew install ghq
 brew install peco
