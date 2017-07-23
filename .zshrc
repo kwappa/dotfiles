@@ -94,3 +94,6 @@ fi
 
 # for homebrew on El Capitan
 alias writable-usr-local='sudo chown -R $(whoami):admin /usr/local'
+
+# for nodebrew
+export PATH=$PATH:$HOME/.nodebrew/current/bin
