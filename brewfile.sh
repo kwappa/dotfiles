@@ -14,8 +14,7 @@ brew install icu4c
 brew install imagemagick
 brew install jpeg
 brew install libevent
-brew install homebrew/dupes/libiconv
-brew link libiconv --force
+brew install libiconv
 brew install libpng
 brew install libtiff
 brew install libtool
