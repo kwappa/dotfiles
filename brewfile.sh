@@ -3,7 +3,6 @@ brew update
 brew install autoconf
 brew install automake
 brew install cmake
-brew install emacs
 brew cask install emacs
 brew install gdbm
 brew install gettext
