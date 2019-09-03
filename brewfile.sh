@@ -35,9 +35,11 @@ brew install zsh
 brew install zsh-completions
 brew install pwgen
 
+brew tap homebrew/cask-fonts
+brew cask install font-ricty-diminished
+
 brew install ghq
 brew install peco
-brew install heroku
 go get -u github.com/nsf/gocode
 
 brew upgrade
