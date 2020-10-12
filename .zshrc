@@ -76,7 +76,8 @@ fi
 # for golang / peco
 if [[ -s "/usr/local/opt/go/libexec/bin" ]] ; then
     export PATH=$PATH:/usr/local/opt/go/libexec/bin
-    export GOPATH=$HOME
+    export GOPATH=$HOME/go
+    export PATH=$PATH:/usr/local/opt/go/libexec/bin:/$GOPATH/bin
 fi
 p() { peco | while read LINE; do $@ $LINE; done }
 alias q='ghq list -p | p cd'
