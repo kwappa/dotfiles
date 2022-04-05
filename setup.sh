@@ -10,13 +10,10 @@ if [ $# -ne 1 ]; then
 fi
 
 mode=$1
-files=(.zshrc .gitconfig .gitignore .rspec .vimrc .tmux.conf .inputrc .pryrc)
-num=${#files[@]}
-i=0
 
 case $mode in
     install)
-        echo 'uninstall'
+        echo 'install'
         ;;
     uninstall)
         echo 'uninstall'
@@ -26,12 +23,12 @@ case $mode in
         exit
 esac
 
-while (($i<$num))
-do
-  symlink=~/${files[$i]}
+for src in `\find config -maxdepth 1 -type f`; do
+  file="${src//config``\//}"
+  symlink="${HOME}/${file}"
   if [ $mode = 'install' ]; then
-      echo "link ${symlink}"
-      ln -s `pwd`/${files[$i]} $symlink
+      echo "link ${src} to ${symlink}"
+      ln -s "`pwd`/${src}" $symlink
   elif [ $mode = 'uninstall' ]; then
       if [ -L $symlink ]; then
           rm $symlink
@@ -42,5 +39,4 @@ do
   else
       echo "nothing for ${symlink}"
   fi
-  i=$i+1
 done
