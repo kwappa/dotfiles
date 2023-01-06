@@ -19,12 +19,9 @@
     lp = "log -p"
     lg = "log --graph --pretty=oneline"
     dc = "diff --cached"
-    fetch-pulls = "fetch origin +refs/pull/*:refs/remotes/pull/*"
 [core]
     excludesfile = ~/.gitignore
     quotepath = false
-[include]
-    path = .gitconfig.local
 [pager]
     log  = diff-highlight | less
     show = diff-highlight | less
