@@ -1,33 +1,23 @@
 # dotfiles
-my dotfiles.
+My dotfiles.
 
-## how to install
+## dotfiles
+
+dotiles below `config`
+
+### how to install
 
 ```
 % ./setup.sh install
 ```
-
 * create symlinks from here to your home directory
-* download icons for autotest
 
-## how to uninstall
+### how to uninstall
 
 ```
 % ./setup.sh uninstall
 ```
-
 * remove symlinks from your home directory
-
-## dotfiles
-
-* .zshrc
-* .gitconfig
-* .gitignore
-* .rspec
-* .vimrc
-* .tmux.conf
-* .inputrc
-* .pryrc
 
 ## brewfile.sh
 
