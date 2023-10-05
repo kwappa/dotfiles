@@ -48,3 +48,13 @@ export GOPATH=$HOME
 export PATH=$PATH:$GOPATH/bin
 p() { peco | while read LINE; do $@ $LINE; done }
 alias q='ghq list -p | p cd'
+
+# nodebrew
+export PATH=$HOME/.nodebrew/current/bin:$PATH
+
+# zsh-completions
+if type brew &>/dev/null; then
+    FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+    autoload -Uz compinit
+    compinit
+fi
