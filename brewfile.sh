@@ -1,6 +1,6 @@
 #!/bin/sh
+brew upgrade
 
-brew update
 brew install zsh
 brew install zsh-completions
 brew install tmux
@@ -14,9 +14,4 @@ brew install wget
 brew install ghq
 brew install peco
 
-brew tap homebrew/cask-fonts
-brew install --cask font-ricty-diminished
-brew install --cask visual-studio-code
-
-brew upgrade
 brew cleanup
