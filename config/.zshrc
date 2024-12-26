@@ -1,11 +1,8 @@
-autoload -U compinit && compinit
+# colors
+autoload -Uz colors && colors
 
 # case-insensitive completion
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
-
-# colors
-autoload -Uz colors
-colors
 
 # prompt
 PROMPT='%F{blue}[%*] %F{red}%%%f '
@@ -37,11 +34,16 @@ export LESSCHARSET=utf-8
 # disable logout by Ctrl-D
 setopt IGNOREEOF
 
-# diff-highlight
-export PATH=$PATH:/opt/homebrew/share/git-core/contrib/diff-highlight/
-
-# rbenv
-eval "$(rbenv init - zsh)"
+# homebrew
+if type brew &>/dev/null; then
+    # zsh-completions
+    FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+    autoload -Uz compinit && compinit
+    # zsh-autosuggestions
+    source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+    # diff-highlight
+    export PATH=$PATH:/opt/homebrew/share/git-core/contrib/diff-highlight/
+fi
 
 # ghq / peco
 export GOPATH=$HOME
@@ -49,12 +51,8 @@ export PATH=$PATH:$GOPATH/bin
 p() { peco | while read LINE; do $@ $LINE; done }
 alias q='ghq list -p | p cd'
 
-# zsh-completions
-if type brew &>/dev/null; then
-    FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
-    autoload -Uz compinit
-    compinit
-fi
+# rbenv
+eval "$(rbenv init - zsh)"
 
 # nodebrew
 if [ -d $HOME/.nodebrew ]; then
