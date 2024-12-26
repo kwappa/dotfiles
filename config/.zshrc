@@ -49,9 +49,6 @@ export PATH=$PATH:$GOPATH/bin
 p() { peco | while read LINE; do $@ $LINE; done }
 alias q='ghq list -p | p cd'
 
-# nodebrew
-export PATH=$HOME/.nodebrew/current/bin:$PATH
-
 # zsh-completions
 if type brew &>/dev/null; then
     FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
@@ -59,7 +56,14 @@ if type brew &>/dev/null; then
     compinit
 fi
 
+# nodebrew
+if [ -d $HOME/.nodebrew ]; then
+    export PATH=$HOME/.nodebrew/current/bin:$PATH
+fi
+
 # pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
+if [ -d $HOME/.pyenv ]; then
+    export PYENV_ROOT="$HOME/.pyenv"
+    [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+    eval "$(pyenv init -)"
+fi
