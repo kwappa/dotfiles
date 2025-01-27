@@ -14,5 +14,7 @@ brew install the_silver_searcher
 brew install wget
 brew install ghq
 brew install peco
+brew install fastfetch
+brew install ghostty
 
 brew cleanup
