@@ -36,6 +36,7 @@ setopt IGNOREEOF
 
 # homebrew
 if type brew &>/dev/null; then
+    export PATH="/opt/homebrew/bin:$PATH"
     # zsh-completions
     FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
     autoload -Uz compinit && compinit
