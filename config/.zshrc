@@ -35,18 +35,6 @@ export LESSCHARSET=utf-8
 # disable logout by Ctrl-D
 setopt IGNOREEOF
 
-# homebrew
-if type brew &>/dev/null; then
-    export PATH="/opt/homebrew/bin:$PATH"
-    # zsh-completions
-    FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
-    autoload -Uz compinit && compinit
-    # zsh-autosuggestions
-    source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-    # diff-highlight
-    export PATH=$PATH:/opt/homebrew/share/git-core/contrib/diff-highlight/
-fi
-
 # ghq / peco
 export GOPATH=$HOME
 export PATH=$PATH:$GOPATH/bin
@@ -71,4 +59,16 @@ fi
 # fnm
 if [ -d $HOME/.local/share/fnm ]; then
     eval "$(fnm env --use-on-cd)"
+fi
+
+# homebrew
+if type brew &>/dev/null; then
+    export PATH="/opt/homebrew/bin:$PATH"
+    # zsh-completions
+    FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+    autoload -Uz compinit && compinit
+    # zsh-autosuggestions
+    source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+    # diff-highlight
+    export PATH=$PATH:/opt/homebrew/share/git-core/contrib/diff-highlight/
 fi
