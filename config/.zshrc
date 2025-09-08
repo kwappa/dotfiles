@@ -66,3 +66,8 @@ if [ -d $HOME/.pyenv ]; then
     [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
     eval "$(pyenv init -)"
 fi
+
+# fnm
+if [ -d $HOME/.local/share/fnm ]; then
+    eval "$(fnm env --use-on-cd)"
+fi
