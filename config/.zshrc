@@ -11,6 +11,7 @@ PROMPT='%F{blue}[%*] %F{red}%%%f '
 alias ls="ls -G"
 alias ll="ls -laG"
 alias g="git"
+alias bx="bundle exec"
 
 # History
 export HISTFILE=${HOME}/.zsh_history
