@@ -63,9 +63,9 @@ fi
 
 # homebrew
 if type brew &>/dev/null; then
-    export PATH="/opt/homebrew/bin:$PATH"
+    export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"
     # zsh-completions
-    FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+    PATH=$(brew --prefix)/share/zsh-completions:$PATH
     autoload -Uz compinit && compinit
     # zsh-autosuggestions
     source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
