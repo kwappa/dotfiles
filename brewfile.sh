@@ -9,6 +9,7 @@ brew install git
 brew install rbenv
 brew install libyaml
 brew install libffi
+brew install gmp
 brew install go
 brew install the_silver_searcher
 brew install wget
