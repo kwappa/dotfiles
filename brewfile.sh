@@ -14,6 +14,7 @@ brew install gmp
 brew install go
 brew install the_silver_searcher
 brew install wget
+brew install gh
 brew install ghq
 brew install peco
 brew install fastfetch
