@@ -53,25 +53,10 @@ export PATH=$PATH:$GOPATH/bin
 p() { peco | while read LINE; do $@ $LINE; done }
 alias q='ghq list -p | p cd'
 
-# rbenv
-eval "$(rbenv init - zsh)"
-
-# nodebrew
-if [ -d $HOME/.nodebrew ]; then
-    export PATH=$HOME/.nodebrew/current/bin:$PATH
+# mise
+if command -v mise > /dev/null 2>&1; then
+    eval "$(mise activate zsh)"
 fi
 
-# pyenv
-if [ -d $HOME/.pyenv ]; then
-    export PYENV_ROOT="$HOME/.pyenv"
-    [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-    eval "$(pyenv init -)"
-fi
-
-# fnm
-if [ -d $HOME/.local/share/fnm ]; then
-    eval "$(fnm env --use-on-cd)"
-fi
-
-# direnv
-eval "$(direnv hook zsh)"
+# esp-idf
+alias get_idf='. ${HOME}/src/github.com/espresiff/esp-idf/export.sh'

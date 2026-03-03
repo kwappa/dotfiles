@@ -6,8 +6,6 @@ brew install zsh-completions
 brew install zsh-autosuggestions
 brew install tmux
 brew install git
-brew install rbenv
-brew install direnv
 brew install libyaml
 brew install libffi
 brew install gmp
@@ -19,5 +17,6 @@ brew install ghq
 brew install peco
 brew install fastfetch
 brew install ghostty
+brew install mise
 
 brew cleanup
