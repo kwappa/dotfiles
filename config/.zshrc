@@ -59,4 +59,4 @@ if command -v mise > /dev/null 2>&1; then
 fi
 
 # esp-idf
-alias get_idf='. ${HOME}/src/github.com/espresiff/esp-idf/export.sh'
+alias get_idf='. ${HOME}/src/github.com/espressif/esp-idf/export.sh'
